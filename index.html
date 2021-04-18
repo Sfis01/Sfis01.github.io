@@ -1,119 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&family=Pacifico&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Welcome To Official SchoolMate</title>
 </head>
-
 <body>
-    <!-- navigation bar -->
     <header>
-        <!-- nav menu -->
-        <nav class="nav" role="navigation">
+        <!-- navigation and links -->
+        <nav class="nav">
             <ul>
-                <li class="logo"><a href="#">malebo's</a></li>
-                <li><a href="#"><i class="bi bi-house icon"></i>Home</a></li>
-                <li><a href="#"><i class="bi bi-pen icon"></i>Services</a></li>
-                <li><a href="#"><i class="bi bi-journal icon"></i>Blog</a></li>
-                <li><a href="#"><i class="bi bi-telephone icon"></i>Contact us</a></li>
-                <li class="cta-btn"><a href="#">Order now!</a></li>
+                <li id="logo"><a href="#"><img src="images/logo-white.svg" alt="Schoolmate logo"></a></li>
+                <li class="nav-link"><a href="#"><i class="bi bi-house icon"></i>Home</a></li>
+                <li class="nav-link"><a href="#"><i class="bi bi-lightbulb icon"></i>Our features</a></li>
+                <li class="nav-link"><a href="#"><i class="bi bi-globe icon"></i>About us</a></li>
+                <li class="nav-link"><a href="#"><i class="bi bi-telephone icon"></i>Contact us</a></li>
+                <li id="btn-signin"><a class="btn btn-trans" href="#">Sign in</a></li>
+                <li id="btn-register"><a class="btn btn-black" href="#">Register as a learner</a></li>
             </ul>
         </nav>
-        <!-- call to action cover -->
-        <div class="banner-cover">
-            <p>Banner</p>
+
+        <div class="banner">
+            <div class="big-logo"><img src="images/logo-blue.svg" alt="Schoolmate big logo">
+                <p class="logo-name">SchoolMate</p>
+                <p class="logo-slogan">Excel in Maths & Science</p>
+            </div>
+            <div class="banner-text">
+                <h1>
+                    Want to <em>excel</em> in Maths & Science?
+                </h1>
+                <h3>
+                    SchoolMate has got your back!
+                </h3>
+                <p>
+                    With our smart tutoring services and online practice platforms, you can be sure you will <em>ace</em> that paper on the exam.
+                </p>
+                <p>
+                    Join us today and start building muscles for exam!
+                </p>
+                <a href="#" class="btn btn-blue">Join us now!</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="meals">
-            <h1>Discover our meals made with <i class="bi bi-heart heart"></i></h1>
-            <div class="meals">
-                <div class="meal">
-                    <div class="image">
-                        <p>meal image</p>
-                    </div>
-                    <div class="details">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure commodi et debitis facilis reiciendis? Eum fugiat distinctio.</p>
-                    </div>
-                    <!-- <button class="btn btn-black">order now &rarr;</button> -->
+        <!-- main content of the website -->
+        <section class="features">
+            <h2>So, let's discuss, <em class="em">why</em> SchoolMate?</h2>
+            <div class="feature-card">
+                <div class="left">
+                    <i class="bi bi-person-fill feature-icon fl"></i>
                 </div>
-                <div class="meal">
-                    <div class="image">
-                        <p>meal image</p>
-                    </div>
-                    <div class="details">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure commodi et debitis facilis reiciendis? Eum fugiat distinctio.</p>
-                    </div>
-                </div>
-                <div class="meal">
-                    <div class="image">
-                        <p>meal image</p>
-                    </div>
-                    <div class="details">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure commodi et debitis facilis reiciendis? Eum fugiat distinctio.</p>
-                    </div>
-                </div>
-                <div class="meal">
-                    <div class="image">
-                        <p>meal image</p>
-                    </div>
-                    <div class="details">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure commodi et debitis facilis reiciendis? Eum fugiat distinctio.</p>
-                    </div>
-                </div>
-                <div class="meal">
-                    <div class="image">
-                        <p>meal image</p>
-                    </div>
-                    <div class="details">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure commodi et debitis facilis reiciendis? Eum fugiat distinctio.</p>
-                    </div>
-                </div>
-                <div class="meal">
-                    <div class="image">
-                        <p>meal image</p>
-                    </div>
-                    <div class="details">
-                        <h3>Lorem Ipsum</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure commodi et debitis facilis reiciendis? Eum fugiat distinctio.</p>
-                    </div>
+                <div class="right">
+                    <h4>Student Talk Sessions</h4>
+                    <p>
+                        Every Friday, SchoolMate will hold a talk-and-discuss session where students will be able to speak about the common problems they face in their academics, and how and what they would like to be improved on the SchoolMate Program. This will help students to ease out the pressure they face and to tackle the problems with confidence.
+                    </p>
                 </div>
             </div>
-        </section>
-        <section class="recipes">
-            <h1>Our secrete recipes</h1>
-            <div class="msg">
-            <p>
-                Our recipes are world-class yet secrete! We love our customers, so we reveal one or two of our best recipes to master that next family meal;)
-            </p>
-            <h2>
-                We <i class="bi bi-heart heart"></i> you! That's why we share our pot of <i class="bi bi-heart heart"></i> with you!
-            </h2>
+            <div class="feature-card">
+                <div class="left">
+                    <h4>Weekly tests and reports</h4>
+                    <p>
+                        SchoolMate believes in practical and feedback-driven learning. With our weekly tests, students will be pushed to get used to real examination atmosphere. They will also be given a chance to express and explain what they learnt throughout the week. Weekly reports will also be generated to help students keep track of their progress.
+                    </p>
+                </div>
+                <div class="right">
+                    <i class="bi bi-journal-check feature-icon fr"></i>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="left">
+                    <i class="bi bi-calendar2-week feature-icon fl"></i>
+                </div>
+                <div class="right">
+                    <h4>Monthly reviews and reports</h4>
+                    <p>
+                        Apart from weekly reports, monthly reports will be generated, and their main goal will be just as the same as the weekly reports, to promote feedback-driven learning. Each student will be given a review individually on their academic strengths and weaknesses and show them possible steps to improve.
+                    </p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="right">
+                    <h4>Exam guide-throughs and time management skills</h4>
+                    <p>
+                        Students will be given step-by-step methods on tackling real exam questions, how to get the most from the exam, and how to minimize common exam mistakes. SchoolMate also believes that discipline and time management skills are keys to exam success, that’s why there will  be special cases when students will have taught them and showed how to apply them in the exam.
+                    </p>
+                </div>
+                <div class="left">
+                    <i class="bi bi-book-half feature-icon fr"></i>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="right">
+                    <i class="bi bi-person-check feature-icon fl"></i>
+                </div>
+                <div class="left">
+                    <h4>1-on-1 mentoring</h4>
+                    <p>
+                        SchoolMate understands that students may miss, or completely not understand a concept when taught in class, that’s why we also dedicate ourselves on helping students understand lessons individually.
+                    </p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="left">
+                    <h4>Students earn points while learning</h4>
+                    <p>
+                        This technique is uniquely designed by SchoolMate to promote feedback-driven learning. Students will be awarded points for every effort they make. These points will be included in both weekly and monthly reports as a motivation to the student. Students can also use points to purchase stationery and other related items.
+                    </p>
+                </div>
+                <div class="right">
+                    <i class="bi bi-stars feature-icon fr"></i>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="left">
+                    <i class="bi bi-award feature-icon fl"></i>
+                </div>
+                <div class="right">
+                    <h4>Top 5 certificates</h4>
+                    <p>
+                        Every month, SchoolMate will award the top 5 learners in both Mathematics and Science. This is to honor the students who work hard in their academics.
+                    </p>
+                </div>
             </div>
 
-            <button class="btn btn-black">See our recipes &rarr;</button>
+        </section>
+
+        <section class="pricing">
+            <h2>Our prices are easily affordable!</h2>
+            <div class="price-cards">
+                <div class="price-card">
+                    <h3>1-on-1 session <span>Per session</span></h3>
+                    <p class="price">R25</p>
+                </div>
+                <div class="price-card">
+                    <h3>Per Session <span>More mobility!</span></h3>
+                    <p class="price">R10</p>
+                </div>
+                <div class="price-card">
+                    <h3>Per Week <span>R5 off!</span></h3>
+                    <p class="price">R45</p>
+                </div>
+                <div class="price-card">
+                    <h3>Per Month <span>More affordable!</span></h3>
+                    <p class="price">R150</p>
+                </div>
+            </div>
+            <a href="#" class="btn btn-blue">More info &rarr;</a>
+        </section>
+
+        <section class="register">
+            <h2>Register now!</h2>
+            <p>Join hundreds of other students who prepare for their exams with SchoolMate. <br> Register to get started!</p>
+            <a href="#" class="btn btn-black">Register now!</a>
         </section>
     </main>
+
     <footer>
-        <p>Made with <i class="bi bi-heart heart"></i> by Sifiso Rimana</p>
+        <!-- footer and additional info -->
+        <div class="footer-logo">
+            <img src="images/logo-blue.svg" alt="SchoolMate logo" width="400">
+            <p class="logo-name">SchoolMate</p>
+            <p class="logo-slogan">Excel in Maths & Science</p>
+        </div>
+        <div class="quick-links">
+            <h3>Quick links</h3>
+            <a href="#">Mathematics</a>
+            <a href="#">Science</a>
+            <a href="#">Tips and tricks</a>
+            <a href="#">Pricing</a>
+            <a href="#">Schedule</a>
+        </div>
+        <div class="contacts">
+            <h3>Contacts</h3>
+            <a href="#">Email</a>
+            <a href="#">Call</a>
+            <a href="#">WhatsApp</a>
+        </div>
+        <div class="join">
+            <h3>Register</h3>
+            <a href="#">Register</a>
+            <a href="#">Sign in</a>
+        </div>
     </footer>
+    
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
-
 </html>

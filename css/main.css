@@ -1,0 +1,418 @@
+:root {
+    --color-black: black;
+    --color-white: white;
+    --color-gray: #eee;
+    --color-teal: teal;
+    --color-blue: #0d6efd;
+    --color-blue-vibrant: #0d6efd;
+    --color-red: #dc3545;
+    --color-green: #198754;
+    --color-yellow: #ffc107;
+    --color-smooth-black: #212529;
+    --default-border-radius: 3px;
+    --border-radius: 3rem;
+    --default-box-shadow: 0 2rem 4rem rgba(0, 0, 0, .3);
+    --gab-small: 2rem;
+    --gap-medium: 4rem;
+    --gap-large: 10rem;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Arial', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+
+.u-center-block-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.u-center-text {
+    text-align: center !important;
+}
+
+.u-margin-top-small {
+    margin-top: var(--gab-small) !important;
+}
+
+.u-margin-top-medium {
+    margin-top: var(--gap-medium) !important;
+}
+
+.u-margin-top-large {
+    margin-top: var(--gap-large) !important;
+}
+
+.u-margin-bottom-small {
+    margin-bottom: var(--gap-small) !important;
+}
+
+.u-margin-bottom-medium {
+    margin-bottom: var(--gap-medium) !important;
+}
+
+.u-margin-bottom-large {
+    margin-bottom: var(--gap-large) !important;
+}
+
+/* components */
+
+.btn,
+.btn:link,
+.btn:visited,
+.btn:focus,
+.btn:active {
+    text-decoration: none;
+    display: inline-block;
+    padding: .8rem;
+    border-radius: 3rem;
+    transition:all .3s;
+    font-size: 2rem;
+}
+
+.btn-black {
+    background-color: var(--color-smooth-black);
+    color: var(--color-blue) ;
+    border: 2px solid var(--color-smooth-black);
+}
+
+.btn-black:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-trans {
+    background-color: transparent;
+    border: 2px solid var(--color-smooth-black);
+    color: var(--color-smooth-black) !important;
+}
+
+.btn-trans:hover {
+    color: white !important;
+    border: 2px solid white;
+}
+
+
+.btn-white {
+    background-color: white;
+    color: var(--color-blue-vibrant) !important;
+    border: 2px solid white;
+}
+
+.btn-white:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white !important;
+}
+
+.btn-blue {
+    background-color: var(--color-blue-vibrant);
+    border: 2px solid var(--color-blue-vibrant);
+    color: white;
+}
+
+.btn-blue:hover {
+    background-color: transparent;
+    color: var(--color-blue-vibrant);
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 1rem;
+    /* font-size: ; */
+}
+.feature-icon {
+    display: block;
+    color: var(--color-blue);
+    font-size: 20rem;
+    line-height: 1;
+    margin: 0 6rem;
+}
+.fl {
+    /* border-right: 1px solid var(--color-blue); */
+    padding-right: 4rem;
+}
+.fr {
+    /* border-left: 1px solid var(--color-blue); */
+    padding-left: 4rem;
+}
+.feature-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
+    opacity: .7;
+}
+.price-card {
+    background-color: var(--color-blue);
+    border-radius: 3px;
+    padding: 3rem;
+    max-width: 40rem;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.price-card:hover {
+    box-shadow: var(--default-box-shadow);
+    transform: scale(1.05);
+}
+
+.price-card .price {
+    color: #eee;
+    font-size: 3rem;
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.price-card span {
+    color: var(--color-smooth-black);
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 2rem !important;
+}
+
+.price-card h3 {
+    font-family: 'montserrat', 'roboto', sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+.feature-card p {
+    text-align: justify;
+}
+
+.em {
+    color: var(--color-blue) !important;
+}
+
+h2 {
+    font-weight: 300;
+    color: var(--color-smooth-black);
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'montserrat', 'roboto', sans-serif;
+}
+
+h4 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'montserrat', 'roboto', sans-serif;
+}
+
+/* nav links */
+
+#logo {
+    margin-left: 3rem;
+    width: 15%;
+}
+
+#logo img {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-blue-vibrant);
+}
+
+nav a:link,
+nav a:visited,
+nav a:focus,
+nav a:active,
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-family: "montserrat", 'roboto', 'arial';
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid var(--color-smooth-black);
+}
+nav ul li {
+    display: block;
+    list-style: none;
+    margin-left: 2rem;
+    transition: all .3s;
+    border-bottom: 2px solid transparent;
+}
+nav ul {
+    width: 100%;
+    height: 100%;
+    padding-right: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#btn-signin {
+    margin-left: auto;
+}
+
+/* cover/banner */
+
+.banner {
+    width: 100%;
+    height: 60%;
+    padding: 9rem 0;
+    background-color: var(--color-smooth-black);
+    color: #eee;
+
+    display: flex;
+}
+.banner em {
+    color: var(--color-blue-vibrant);
+}
+.banner .big-logo {
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+.banner .big-logo img {
+    width: 110%;
+    text-align: center;
+}
+/* .banner-text {
+} */
+.banner-text h1 {
+    font-size: 6rem;
+    font-weight: 200;
+    font-family: 'montserrat', 'roboto', 'arial' , sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.banner h3 {
+    margin-bottom: 1rem;
+    color: var(--color-blue-vibrant);
+    font-weight: 300;
+}
+.banner-text p {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.banner-text a {
+    font-size: 1.8rem;
+}
+
+.big-logo p,
+.footer-logo p {
+    text-align: center;
+    margin-bottom: .3rem;
+}
+.big-logo p.logo-name,
+.footer-logo p.logo-name {
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--color-blue);
+}
+
+.big-logo p.logo-slogan,
+.footer-logo p.logo-slogan {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* features section */
+section.features {
+    padding: 6rem 10rem;
+    color: #eee;
+    background-color: #212529f3;
+}
+
+
+.features h4 {
+    color: var(--color-blue);
+    font-weight: 400;
+}
+
+
+.features h2 {
+    color: #eee;
+}
+
+.features p {
+    font-size: 2rem;
+}
+
+.price-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    padding: 6rem 0;
+}
+.pricing {
+    text-align: center;
+    padding-bottom: 6rem;
+    padding-top: 4rem;
+    background-color: var(--color-gray);
+}
+.register {
+    height: 30rem;
+    background-image: url(/images/books.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 3rem 0;
+}
+
+.register p {
+    font-size: 3rem;
+    text-align: center;
+    /* color: #eee; */
+    margin-top: 3rem;
+}
+.register  {
+    text-align: center;
+}
+.register .btn {
+    margin-top: 3rem;
+}
+
+footer {
+    padding: 6rem 3rem;
+    background-color: var(--color-smooth-black);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:focus,
+footer a:active {
+    color: var(--color-gray);
+    font-size: 1.6rem;
+    display: block;
+    margin: 2rem 0;
+}
+
+footer h3 {
+    color: var(--color-gray);
+    font-family: 'montserrat','roboto', sans-serif;
+    font-size: 3rem;
+}
+.footer-logo p.logo-slogan {
+    color: var(--color-gray);
+}
+
